@@ -19,9 +19,9 @@ TEST_CASE("average is NaN for empty array") {
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
-    REQUIRE(std::abs(computedStats.average - isnan(0.0)));
-    REQUIRE(std::abs(computedStats.max - isnan(0.0)));
-    REQUIRE(std::abs(computedStats.min - isnan(0.0)));
+    REQUIRE(std::abs(computedStats.average - isnan(0.0f)));
+    REQUIRE(std::abs(computedStats.max - isnan(0.0f)));
+    REQUIRE(std::abs(computedStats.min - isnan(0.0f)));
     //Use http://www.cplusplus.com/reference/cmath/isnan/
 }
 
