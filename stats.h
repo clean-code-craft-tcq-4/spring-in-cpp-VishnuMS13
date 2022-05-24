@@ -1,4 +1,7 @@
 #include <vector>
+#include <numeric>
+#include <iostream>
+#include <bits/stdc++.h>
 
 typedef struct ComputedStats
 {
