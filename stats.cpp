@@ -1,7 +1,9 @@
 #include "stats.h"
 
 Stats Statistics::ComputeStatistics(const std::vector<float>& vectorInput) {
+    double sum = 0.0;
     Stats m_trStats;
+
     if (vectorInput.empty()) 
     {
         m_trStats.average = 0;
