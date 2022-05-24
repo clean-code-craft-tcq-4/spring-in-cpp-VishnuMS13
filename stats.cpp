@@ -12,9 +12,10 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& vectorInput) {
     else
     {
         m_trStats.average = accumulate(vectorInput.begin(), vectorInput.end(), 0.0/ vectorInput.size());
-        m_trStats.min = *min_element(a.begin(), a.end());
-        m_trStats.max = *max_element(a.begin(), a.end());
+        m_trStats.min = *min_element(vectorInput.begin(), vectorInput.end());
+        m_trStats.max = *max_element(vectorInput.begin(), vectorInput.end());
     }
 
     return m_trStats;
 }
+
