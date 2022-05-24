@@ -6,9 +6,9 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& vectorInput) {
 
     if (vectorInput.empty()) 
     {
-        m_trStats.average = 0;
-        m_trStats.min = 0;
-        m_trStats.max = 0;
+        m_trStats.average = nan("0.0f");
+        m_trStats.min = nan("0.0f");
+        m_trStats.max = nan("0.0f");
     }
     else
     {
