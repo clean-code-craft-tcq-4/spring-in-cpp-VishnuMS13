@@ -2,6 +2,7 @@
 
 #include "catch.hpp"
 #include "stats.h"
+#include <math.h>
 
 #include <cmath>
 
@@ -18,7 +19,9 @@ TEST_CASE("average is NaN for empty array") {
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
     
-    //Design the REQUIRE statement here.
+    REQUIRE(std::abs(computedStats.average - isnan(0.0f)));
+    REQUIRE(std::abs(computedStats.max - isnan(0.0f)));
+    REQUIRE(std::abs(computedStats.min - isnan(0.0f)));
     //Use http://www.cplusplus.com/reference/cmath/isnan/
 }
 
